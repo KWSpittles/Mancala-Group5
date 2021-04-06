@@ -1,0 +1,87 @@
+.root{
+    -fx-background-color:#FDEADA ;
+    -fx-background-image: url("menu_background.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1920 1080;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+
+}
+
+
+.scenePane{
+
+    -fx-background-color:#FDEADA ;
+    -fx-background-image: url("menu_background.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 720 720;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+
+
+}
+
+#menuPane{
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-color: rgba(255, 255, 255, 0.8);}
+
+
+#title{
+    -fx-font-size: 50;
+    -fx-font-family: "verdana";
+    -fx-text-fill: "black";
+    -fx-alignment: center;
+    -fx-pref-tile-width: 720;
+}
+
+
+
+#subtitle{
+    -fx-font-size: 30;
+    -fx-font-family: "Lucida Console";
+    -fx-text-fill: "black";
+    -fx-alignment: center;
+
+}
+
+#passwordField {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+#usernameField{
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+.label{
+
+    -fx-font-size: 20;
+    -fx-font-family: "Lucida Console";
+    -fx-text-fill: "black";
+    -fx-alignment: center;
+
+}
+
+#loginmessage{
+    -fx-text-fill: red;
+    -fx-text-size: 10;
+    -fx-wrap-text: true;
+}
+
+#titleLabel{
+    -fx-font-size: 60;
+
+
+}
+
+#menu{
+    -fx-background-color: "White";
+    -fx-opacity: 0.9;
+}
+
