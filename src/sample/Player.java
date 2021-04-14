@@ -16,7 +16,7 @@ public class Player extends User {
     private ArrayList<User> favPlayers;
 
 
-
-
-
+    public Player(String userName, String first, String last) {
+        super(userName, first, last);
+    }
 }
