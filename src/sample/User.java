@@ -53,12 +53,15 @@ public class User {
     
     //sets the password
     public void setPassword(String password) {
+    	
     	this.password = password;
     	
     }
        
     public void setprofilePicture(Image profilePicture) {
-    	this.profilePicture = profilePicture;
+    	FileOpener fileOpener = new FileOpener();
+    	FileOpener.main(null);
+    	this.profilePicture = fileOpener.getprofilePic();
     }
     
     public void setwinLossDraw(int[] winLossDraw) {
