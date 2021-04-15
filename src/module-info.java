@@ -1,4 +1,4 @@
-module Mancala.Group {
+module Mancala.Group5 {
 
     requires javafx.graphics;
     requires javafx.controls;
