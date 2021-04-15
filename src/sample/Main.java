@@ -1,16 +1,15 @@
 package sample;
 
 import javafx.application.Application;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
-import javafx.scene.control.Label;
 import javafx.scene.image.Image;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+
+import java.net.URL;
 
 public class Main extends Application {
 
@@ -22,9 +21,11 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
 
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("LoginPageController.fxml"));
+            URL url = getClass().getResource("loginPage.fxml");
+            System.out.println(url);
+            Parent root = FXMLLoader.load(url);
             Scene scene = new Scene(root);
-            String css = this.getClass().getResource("sample.css").toExternalForm();
+            String css = this.getClass().getResource("loginPage.css").toExternalForm();
             stage.setTitle("Mancala");
             scene.getStylesheets().add(css);
             stage.getIcons().add(new Image("https://cdn.asp.events/CLIENT_CL_Gamin_A45C4908_5056_B725_6B2249A7AD85625A/sites/iGB-Live-2020/media/libraries/exhibitors/3315D8BD-C9E8-F899-A2A622859897DC57-logo.jpg.png"));
