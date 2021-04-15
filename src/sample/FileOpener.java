@@ -24,19 +24,24 @@ import javafx.stage.Stage;
 
 public class FileOpener extends Application{
 	private Image profilePic;
-
-	 public FileOpener(){}
+	
+	//empty constructor for non-static references
+	public FileOpener(){}
 	
 	public void start(final Stage stage) {
 		stage.setTitle("File Opener");
-
+		
+		//filter to select the type of files to be viewed
+		FileChooser.ExtensionFilter imageFilter
+        = new FileChooser.ExtensionFilter("Image Files", "*.jpg", "*.png");
+		
 		final FileChooser fileChooser = new FileChooser();
+		fileChooser.getExtensionFilters().add(imageFilter);
 
 		final Button openButton = new Button("Select Profile Picture");
 		openButton.setOnAction((final ActionEvent e) -> {
 			File file = fileChooser.showOpenDialog(stage);
 			if (file != null) {
-				// openFile(file);
 
 				Image profilePic = new Image(file.toURI().toString());
 //	                ImageView ip = new ImageView(image1);
@@ -46,10 +51,11 @@ public class FileOpener extends Application{
 		});
 		final StackPane stac = new StackPane();
 		stac.getChildren().add(openButton);
-		stage.setScene(new Scene(stac, 500, 500));
+		stage.setScene(new Scene(stac, 250, 250));
 		stage.show();
 	}
 	
+	//getter method for public access
 	public Image getprofilePic() {
 	    return profilePic;
 	} 
