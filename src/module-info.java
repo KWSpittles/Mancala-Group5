@@ -7,3 +7,4 @@ module Mancala.Group5 {
 
     opens sample;
 }
+
